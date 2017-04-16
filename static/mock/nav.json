@@ -1,0 +1,11 @@
+{
+    "content":{
+        "data":[
+            {"text":"潮流穿搭","path":"clothes"},
+            {"text":"时尚妆容","path":"makeup"},
+            {"text":"发型屋","path":"hair"},
+            {"text":"红人堂","path":"hot"}
+        ]
+    },
+    "success":true
+}

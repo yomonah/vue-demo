@@ -1,15 +1,26 @@
 <template>
   <div id="app">
-    <kHead></kHead>
+    <Banner></Banner>
+    <div class='head-nav'>
+      <HeadNav></HeadNav>
+    </div>
   </div>
 </template>
 
 <script>
-  import kHead from './components/first'
+  import Banner from './components/banner';
+  import HeadNav from './components/headNav';
   export default {
     name: 'app',
     components: {
-      kHead
+      Banner,
+      HeadNav
     }
   }
 </script>
+<style lang='less'>
+  ul{
+    -webkit-padding-start: 0;
+    -webkit-margin-before: 0;
+  }
+</style>

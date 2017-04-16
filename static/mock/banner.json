@@ -1,0 +1,11 @@
+{
+    "content":{
+        "data":[
+            {"img":"/static/img/banner1.png"},
+            {"img":"/static/img/banner2.jpg"},
+            {"img":"/static/img/banner3.jpg"},
+            {"img":"/static/img/banner4.png"}
+        ]
+    },
+    "success":true
+}
