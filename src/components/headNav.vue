@@ -35,31 +35,23 @@
     text-align:center;
     .nav{
         list-style: none;
-        width: 49%;
+        width: 25%;
         display: inline-block;
         text-align: center;
         font-size: 0.8rem;
         color: #999;
-        border: 1px solid #dadada;
-        &.nav:nth-child(1),&.nav:nth-child(2){
-            border-bottom:none;
-        }
-        &.nav:nth-child(1), &.nav:nth-child(3){
-            border-right:none;
-        }
         i{
-            display: inline-block;
-            margin: 4% 0 3% 4%;
+            display: block;
+            margin:0 auto;
             width: 3.5rem;
             height: 3.5rem;
             border-radius: 100%;
             border:1px solid #efecec;
-            float:left;
         }
         span{
             font-size: 1rem;
             display: block;
-            margin-top: 1.5rem;
+            margin-top: 0.5rem;
         }
         .clothes{
             background:url('../../static/img/clothes.jpeg') no-repeat;

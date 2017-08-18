@@ -1,0 +1,17 @@
+{
+    "content":{
+        "data":[
+            {"theme":"小性感","img":"/static/img/chuan1.jpeg","auth":"小小冰"},
+            {"theme":"仙气十足","img":"/static/img/chuan2.jpeg","auth":"艾希希的小可"},
+            {"theme":"小清新","img":"/static/img/chuan3.jpeg","auth":"听说你像一首歌"},
+            {"theme":"秋日颜色","img":"/static/img/chuan4.jpeg","auth":"鲁班七号"},
+            {"theme":"简约风","img":"/static/img/chuan5.jpeg","auth":"glory"},
+            {"theme":"性冷淡","img":"/static/img/chuan6.jpeg","auth":"小可的猫猫"},
+            {"theme":"时尚街拍","img":"/static/img/chuan7.jpeg","auth":"sunshineofyou"},
+            {"theme":"轻熟女","img":"/static/img/chuan8.jpeg","auth":"叠着的小棉被"},
+            {"theme":"甜美风","img":"/static/img/chuan9.jpeg","auth":"躲猫猫"}
+            
+        ]
+    },
+    "success":true
+}
