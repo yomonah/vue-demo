@@ -1,6 +1,6 @@
 <template>
     <ul class='nav-container'>
-        <li class='nav' v-for='item in navList' v-on:click='goTo(item)'>
+        <li class='nav' v-for='item in navList' @click='goTo(item)'>
             <i :class='item.path'></i>
             <span :class='item.path+"-text"'>{{item.text}}</span>
         </li>

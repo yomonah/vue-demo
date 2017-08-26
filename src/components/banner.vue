@@ -11,6 +11,7 @@
 
 <script>
     import {swiper,swiperSlide} from 'vue-awesome-swiper';
+    import {mapState} from 'vuex';
     export default {
         name: 'banner',
         components:{
@@ -27,14 +28,23 @@
                     mousewheelControl : true,
                     observeParents:true,
                 },
-                swiperSlides: []
             }
         },
         created(){
-            this.$http.get('../../static/mock/banner.json').then(res => {
-            this.swiperSlides = res.data.content.data;
-          });
+            this.fetchData(this);
         },
+        methods:{
+            fetchData:function(progress){
+              this.$store.dispatch('getBannerData', {
+                progress: progress,
+              });
+            }
+        },
+        computed: mapState({
+          swiperSlides: state => state.bannerData,
+          isloadingComplete: state => state.isloadingComplete,
+          busy: state => state.busy,
+        })
   }
 </script>
 

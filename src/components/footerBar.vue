@@ -1,7 +1,19 @@
 <template>
     <div class='footer-bar'>
-      <span> 还没账号？</span>
-      <button v-on:click='goTo()'>马上注册</button>
+      <nav class="bar">
+        <router-link class="tab-item" to="/home">
+         <i class='fa fa-home'></i><span>首页</span>
+        </router-link>
+        <router-link class="tab-item" to="/news">
+          <i class='fa fa-podcast'></i><span>动态</span>
+        </router-link>
+        <router-link class="tab-item" to="/car">
+          <i class='fa fa-shopping-cart'></i><span>购物车</span>
+        </router-link>
+        <router-link class="tab-item" to="/personal">
+          <i class='fa fa-user-o'></i><span>我的</span>
+        </router-link>
+      </nav>
     </div>
 </template>
 
@@ -16,26 +28,39 @@
         created(){
         },
         methods:{
-            goTo(){
-              alert('注册功能未开通,乖乖呆在这～');
-            }
         }
     }
 </script>
 <style lang='less'>
   .footer-bar{
-    span{
-      color: #fb9189;
-      margin-left: 2rem;
-    }
-    button{
-      width: 30%;
-      font-size: 1rem;
-      margin-left: 28%;
-      border: 1px solid #fb9189;
-      background: none;
-      color: #fb9189;
-      border-radius: 6px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #f1f1f1;
+    height: 3.5rem;
+    background:#fff;
+    nav{
+      display:flex;
+      width:100%;
+      a{
+        display:inline-block;
+        width:25%;
+        list-style:none;
+        text-align:center;
+        margin-top: 0.5rem;
+        color:#999;
+        text-decoration: none;
+        i{
+          display: block;
+          font-size: 1.5rem;
+        }
+        span{
+          font-size: 0.5rem;
+        }
+      }
+      .router-link-active{
+        color:#e66691;
+      }
     }
   }
 </style>
